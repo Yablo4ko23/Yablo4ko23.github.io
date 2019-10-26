@@ -1,0 +1,33 @@
+#button{
+    background-color: aquamarine;
+    color: brown;
+    font-size: 50px;
+}
+
+.head_text{
+    color: crimson;
+    font-size: 50px;
+}
+
+#time{
+    color: darkblue;
+    font-size: 40px;
+}
+
+#time_text{
+    color: darkgreen;
+    font-size: 40px;
+}
+
+.main{
+    color: darkorange;
+    font-size: 30px;
+}
+
+#input{
+    background-color: antiquewhite;
+    font-size: 20px;
+    width: 500px;
+    height: 40px;
+    color: blueviolet;
+}
