@@ -1,0 +1,82 @@
+@font-face{
+    font-family: 'Ubuntu-L';
+    src: url('../homework/fonts/Ubuntu-L.ttf');
+    src: url('../fonts/Ubuntu-L.eot?iefix') format('eot'),
+    url('../fonts/Ubuntu-L.woff') format('woff'),
+    url('../fonts/Ubuntu-L.ttf') format('truetype'), 
+    url('../fonts/Ubuntu-L.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navigation {
+    margin-left: 200px ;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    width: 225px;
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 77px;
+    margin-bottom: 103px;
+    
+}
+
+.left_blocks{
+    display: inline-block;
+    width: 421px;
+    height: 610px;
+    margin-left: 150px;
+    margin-right: 61px;
+}
+
+.right_blocks{
+    display: inline-block;
+    width: 421px;
+    height: 610px;
+    margin-right: 150px;
+}
+
+.button {
+    display: inline-block;
+    border-color: #626262;
+    background: none;
+    padding-left: 34px;
+    padding-top: 13px;
+    padding-right: 34px;
+    padding-bottom: 13px;
+    margin-bottom: 70px;
+    margin-top: 57px;
+    margin-left: 537px;
+    color: #6c6c6c;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+}
+
+.small_text{
+    color: #b4ad9e;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+}
+
+.main_text{
+    color: #777777;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+}
+
+.big_text{
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+}
+
+a:active{
+    color: #03a9f4;
+}
