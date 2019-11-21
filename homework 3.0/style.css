@@ -21,8 +21,7 @@
 }
 
 .img {
-    margin-left: 220px;
-    margin-right: 61px; 
+    margin: 0px 61px 0px 220px;
 }
 
 .second_block div{
@@ -34,9 +33,7 @@
     border: 1px solid #626262;
     background-color: #ffffff;
     padding: 13px 34px 13px 34px;
-    margin-left: 44%;
-    margin-top: 60px;
-    margin-bottom: 70px;
+    margin: 60px 0px 70px 44%;
     color: #626262;
     font-family: 'Playfair Display', serif;
     font-size: 17px;
