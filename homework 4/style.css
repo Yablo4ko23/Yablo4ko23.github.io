@@ -1,0 +1,118 @@
+.head {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.navigation_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.navigation_links li{
+    margin-right: 57px;
+}
+
+.navigation_links li a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #95e1d3;
+}
+
+#logo {
+    margin: 0px 0px 1em 180px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #95e1d3;
+    font-size: 30px;
+}
+
+.small_head_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kaushan Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333333;
+}
+
+.big_head_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.underline {
+    display: flex;
+    background-color: #f38181;
+    height: 3px;
+    margin: 50px 636.5px;
+
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 194px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #b3b3b3;
+}
+
+.first_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 200px 50px 200px;
+}
+
+.second_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 200px 50px 200px;
+}
+
+.describe {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #b3b3b3;
+}
+
+.headline {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+
+.info_block {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation_links li a:hover{
+    color: #f38181;
+}
