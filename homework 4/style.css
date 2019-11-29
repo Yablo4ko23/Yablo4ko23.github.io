@@ -114,8 +114,9 @@ header {
 }
 
 .icon {
-    margin: 0px 20px 20px 20px;
+    margin: 0px 20px 26px 20px;
 }
+
 
 .navigation_links li a:hover{
     color: #f38181;
