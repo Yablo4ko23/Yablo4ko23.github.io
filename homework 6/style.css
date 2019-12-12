@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'RobotoSlab';
+    src: local(RobotoSlab), url(./fonts/RobotoSlab/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'DroidSerif';
+    src: local(DroidSerif), url(./fonts/DroidSerif/DroidSerif-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'WisdomScript';
+    src: local(WisdomScript), url(./fonts/WisdomScript/Wisdom\ Script\ AJ.otf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local(Montserrat), url(./fonts/Montserrat/Montserrat-Bold.otf), url(./fonts/Montserrat/Montserrat-Regular.otf);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 1200px;
+}
+
+.navigation_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.navigation_links li{
+    margin-right: 57px;
+}
+
+.navigation_links li a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #222222;
+    position: relative;
+}
+
+.navigation_links li a:hover {
+    color: #fed136;
+}
+
+#logo a {
+    margin: 0px 0px 1em 180px;
+    font-family: 'WisdomScript', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #fed136;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.small_head_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DroidSerif', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777777;
+    margin-bottom: 75px;
+}
+
+.big_head_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 200px 50px 200px;
+
+}
+
+.describe {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'RobotoSlab', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+    margin: 0px;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.info_block {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contact {
+    width: 1400px;
+    height: 560px;
+    background-color: #222222;
+    background-image: url(./img/Map\ Image.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.big_head_text_white {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+    margin: 110px 0px 25px 0px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal_data input {
+    height: 50px;
+    width: 455px;
+    border-radius: 5px;
+    color: #bbbbbb;
+
+    font-size: 14px;  
+}
+
+#email {
+    margin: 24px 0px;
+}
+
+.message textarea {
+    width: 455px;
+    height: 210px;
+    margin-left: 28px;
+    border-radius: 5px;
+    color: #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.form input {
+    color: #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.send_message {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.send_message input {
+    background-color: #fed136;
+    border: 1px solid #fed136;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    width: 240px;
+    height: 65px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
