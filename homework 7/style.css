@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local(Montserrat), url(./fonts/Montserrat/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local(Roboto), url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-image: url(./img/Vector\ Smart\ Object.png);
+    background-position: center;
+    width: 100%;
+    height: 540px;
+}
+
+.authorization {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.authorization button {
+    margin-top: 20px;
+    background: transparent;
+    width: 86px;
+    height: 32px;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+
+#log_in {
+   border: 0px solid; 
+}
+
+#sign_up {
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.site_name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 120px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.big_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.small_text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 20px 0px 20px 0px;
+}
+
+.welcome button {
+    color: #ffffff;
+    background-color: #ff4e50;
+    border: 0px solid #ff4e50;
+    border-radius: 20px;
+    height: 40px;
+    width: 87.5%;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+main h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 22px;
+    color: #333333;
+    text-align: center;
+    margin: 70px 0px 20px 0px;
+}
+
+.partner_name {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    color: #333333;
+    margin: 20px 0px;
+}
+
+.partner img {
+    width: 125px;
+    height: 125px;
+}
+
+.about_partner {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #8f8f8f;
+    margin-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer button {
+    color: #ff4e50;
+    background-color: #ffffff;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    height: 36px;
+    width: 86%;
+    margin-bottom: 57px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 700px;
+    }
+
+    .authorization {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0px 50px;
+    }
+
+    .authorization button {
+        margin-top: 38px;
+    }
+
+    .site_name {
+        margin: 50px 0px 160px 0px;
+    }
+
+    main h2 {
+        margin-bottom: 37px;
+    }
+
+    .big_text {
+        text-align: center;
+        font-size: 52px;
+    }
+
+    .small_text {
+        font-size: 24px;
+        margin: 44px 0px 39px 0px;
+    }
+
+    .welcome button {
+        width: 29%;
+    }
+
+    .partners {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .first_column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 28%;
+        margin-right: 50px;
+    }
+
+    .second_column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 28%;
+    }
+
+    .partner_name {
+        margin: 22px 0px;
+    }
+
+    .about_partner {
+        margin-bottom: 60px;
+    }
+
+    footer button {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .authorization {
+        margin: 0px 250px;
+    }
+
+    .welcome button {
+        width: 15%;
+    }
+    
+    .partner {
+        margin: 0px 13px;
+    }
+
+    .first_column, .second_column {
+        flex-direction: row;
+        margin: 0px;
+    }
+
+    footer button {
+        width: 13%;
+    }
+}
