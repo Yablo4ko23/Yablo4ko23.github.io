@@ -33,7 +33,7 @@
     font-style: normal;
     font-weight: 700;
     color: #95e1d3;
-    font-size: 30px;
+    font-size: 26px;
     text-decoration: none;
 }
 
@@ -117,7 +117,10 @@
 }
 
 .icon {
-    margin: 0px 20px 26px 20px;
+    margin: 0px 0px 30px 0px;
+    width: 113px;
+    display: flex;
+    justify-content: center;
 }
 
 .icon img {
