@@ -10,6 +10,12 @@
 
 body {
     margin: 0px;
+    
+}
+
+html {
+    min-width: 320px;
+    font-size: 10px;
 }
 
 header {
@@ -21,7 +27,7 @@ header {
 
 .authorization {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
 }
 
@@ -38,7 +44,7 @@ header {
     color: #ffffff;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
     
 }
 
@@ -61,27 +67,28 @@ header {
 .site_name {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2rem;
     color: #ffffff;
     margin: 120px 0px 40px 0px;
     display: flex;
     justify-content: center;
 }
 
-.big_text {
+.header_title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 3rem;
     color: #ffffff;
     margin: 0px;
+    width: 91%;
 }
 
-.small_text {
+.header_describe {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #ffffff;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px;
 }
 
 .welcome button {
@@ -93,7 +100,8 @@ header {
     width: 87.5%;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
+    max-width: 282px;
 }
 
 .partners {
@@ -103,19 +111,42 @@ header {
     justify-content: center;
 }
 
+.first_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main h2 {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 22px;
+    font-size: 2.2rem;
     color: #333333;
     text-align: center;
     margin: 70px 0px 20px 0px;
+    width: 84%;
+}
+
+.partner {
+    width: 81.25%;
 }
 
 .partner_name {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #333333;
     margin: 20px 0px;
 }
@@ -128,7 +159,7 @@ main h2 {
 .about_partner {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #8f8f8f;
     margin-bottom: 30px;
 }
@@ -148,7 +179,8 @@ footer button {
     margin-bottom: 57px;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
+    max-width: 280px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -157,9 +189,9 @@ footer button {
     }
 
     .authorization {
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: space-between;
-        margin: 0px 50px;
+        margin: 0px 6.5%;
     }
 
     .authorization button {
@@ -174,13 +206,16 @@ footer button {
         margin-bottom: 37px;
     }
 
-    .big_text {
+    .header_title {
         text-align: center;
-        font-size: 52px;
+        font-size: 5.2rem;
+        width: 66%;
+        max-width: 505px;
+        
     }
 
-    .small_text {
-        font-size: 24px;
+    .header_describe {
+        font-size: 2.4rem;
         margin: 44px 0px 39px 0px;
     }
 
@@ -214,33 +249,47 @@ footer button {
     }
 
     .about_partner {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     footer button {
         width: 25%;
+        max-width: 192px;
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
     .authorization {
-        margin: 0px 250px;
+        margin: 0px 17%;
+    }
+
+    .header_title {
+        width: 50%;
     }
 
     .welcome button {
-        width: 15%;
+        width: 22%;
     }
     
     .partner {
-        margin: 0px 13px;
+        margin: 0px 3%;
     }
 
     .first_column, .second_column {
+        width: 45%;
         flex-direction: row;
+        align-items: flex-start;
         margin: 0px;
     }
 
     footer button {
-        width: 13%;
+        width: 18.75%;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .first_column, .second_column {
+        width: 31%;
+        align-items: flex-start;
     }
 }
