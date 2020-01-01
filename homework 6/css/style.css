@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'RobotoSlab';
-    src: local(RobotoSlab), url(./css/fonts/RobotoSlab/RobotoSlab-Regular.ttf);
+    src: local(RobotoSlab), url(./fonts/RobotoSlab/RobotoSlab-Regular.ttf);
 }
 
 @font-face {
     font-family: 'DroidSerif';
-    src: local(DroidSerif), url(./css/fonts/DroidSerif/DroidSerif-Italic.ttf);
+    src: local(DroidSerif), url(./fonts/DroidSerif/DroidSerif-Italic.ttf);
 }
 
 @font-face {
     font-family: 'WisdomScript';
-    src: local(WisdomScript), url(./css/fonts/WisdomScript/Wisdom_Script_AJ.otf);
+    src: local(WisdomScript), url(./fonts/WisdomScript/Wisdom_Script_AJ.otf);
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: local(Montserrat), url(./css/fonts/Montserrat/Montserrat-Bold.otf), url(./css/fonts/Montserrat/Montserrat-Regular.otf);
+    src: local(Montserrat), url(./fonts/Montserrat/Montserrat-Bold.otf), url(./fonts/Montserrat/Montserrat-Regular.otf);
 }
 
 body {
@@ -150,6 +150,9 @@ body {
     background-repeat: no-repeat;
     background-position: bottom right;
     padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .big_head_text_white {
@@ -168,15 +171,20 @@ body {
 .data {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: 210px;
+    justify-content: space-between;
+    width: 978px;
+    height: 204px;
 }
 
 .personal_data {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    height: 204px;
+}
+
+.personal_data label {
+    display: none;
 }
 
 .personal_data input {
@@ -187,14 +195,9 @@ body {
     font-size: 14px;  
 }
 
-.email {
-    margin: 24px 0px;
-}
-
 .message textarea {
     width: 455px;
-    height: 195px;
-    margin-left: 28px;
+    height: 189px;
     border-radius: 5px;
     color: #bbbbbb;
     font-family: 'Montserrat', sans-serif;

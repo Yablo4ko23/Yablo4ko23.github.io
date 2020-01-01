@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>homework 6</title>
 </head>
 <body>
@@ -65,20 +65,25 @@
                 <h2 class="big_head_text_white">CONTACT US</h2>
                 <span class="small_head_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
             </div>
-            <div class="form">
-                <div class="personal_data">
-                    <input type="text" placeholder="YOUR NAME *" required class="required">
-                    <input type="email" placeholder="YOUR E-MAIL *" class="email required" required >
-                    <input type="text" placeholder="SUBJECT">
+            <form action="">
+                <div class="data">
+                    <div class="personal_data">
+                        <label for="client_name"></label>
+                        <input name="client_name" type="text" placeholder="YOUR NAME *" required>
+                        <label for="email"></label>
+                        <input name="email"  type="email" placeholder="YOUR E-MAIL *" class="email" required>
+                        <label for="subject"></label>
+                        <input name="subject" type="text" placeholder="SUBJECT">
+                    </div>
+                    <div class="message">
+                        <textarea type="text" placeholder="YOUR MESSAGE *" required></textarea>
+                    </div>
                 </div>
-                <div class="message">
-                    <textarea type="text" placeholder="YOUR MESSAGE *" required class="required"></textarea>
+                <div class="send_message" action="index.html">
+                    <label for="message"></label>
+                    <button name="message" type="submit" value=''>SEND MESSAGE</button>
                 </div>
-            </div>
-            <form class="send_message" action="#">
-                <button type="submit" value=''>SEND MESSAGE</button>
             </form>
-
         </div>
 </body>
 </html>
