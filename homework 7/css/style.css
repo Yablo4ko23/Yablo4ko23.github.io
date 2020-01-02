@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local(Montserrat), url(./fonts/Montserrat/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local(Roboto), url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+body {
+    margin: 0px;
+    min-width: 320px;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    background-image: url(../img/Vector_Smart_Object.png);
+    background-position: center;
+    width: 100%;
+    height: 540px;
+}
+
+.authorization {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 54%;
+}
+
+.authorization button {
+    margin-top: 20px;
+    background: transparent;
+    width: 86px;
+    height: 32px;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.4rem;
+    
+}
+
+#log_in {
+   border: 0px solid; 
+}
+
+#sign_up {
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.site_name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 120px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.header_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #ffffff;
+    margin: 0px;
+    width: 91%;
+}
+
+.header_describe {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 20px 0px;
+}
+
+.welcome button {
+    color: #ffffff;
+    background-color: #ff4e50;
+    border: 0px solid #ff4e50;
+    border-radius: 20px;
+    height: 40px;
+    width: 87.5%;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.4rem;
+    max-width: 282px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.first_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #333333;
+    text-align: center;
+    margin: 70px 0px 20px 0px;
+    width: 84%;
+}
+
+.partner {
+    width: 81.25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner_name {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #333333;
+    margin: 20px 0px;
+}
+
+.partner img {
+    width: 125px;
+    height: 125px;
+}
+
+.about_partner {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #8f8f8f;
+    margin-bottom: 30px;
+    width: 95%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer button {
+    color: #ff4e50;
+    background-color: #ffffff;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    height: 36px;
+    width: 86%;
+    margin-bottom: 57px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.4rem;
+    max-width: 280px;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 700px;
+    }
+
+    .authorization {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0px 6.5%;
+    }
+
+    .buttons {
+        justify-content: center;
+        
+        width: auto;
+    }
+
+    .authorization button {
+        margin-top: 38px;
+    }
+
+    .site_name {
+        margin: 50px 0px 160px 0px;
+    }
+
+    main h2 {
+        margin-bottom: 37px;
+    }
+
+    .header_title {
+        text-align: center;
+        font-size: 5.2rem;
+        width: 66%;
+        max-width: 505px;
+        
+    }
+
+    .header_describe {
+        font-size: 2.4rem;
+        margin: 44px 0px 39px 0px;
+    }
+
+    .welcome button {
+        width: 29%;
+    }
+
+    .partners {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .first_column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 28%;
+        margin-right: 50px;
+    }
+
+    .second_column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 28%;
+    }
+
+    .partner_name {
+        margin: 22px 0px;
+    }
+
+    .about_partner {
+        margin-bottom: 40px;
+    }
+
+    footer button {
+        width: 25%;
+        max-width: 192px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .authorization {
+        margin: 0px 17%;
+    }
+
+    .header_title {
+        width: 50%;
+    }
+
+    .welcome button {
+        width: 22%;
+    }
+    
+    .partner {
+        margin: 0px 3%;
+    }
+
+    .first_column, .second_column {
+        width: 45%;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0px;
+    }
+
+    footer button {
+        width: 18.75%;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .first_column, .second_column {
+        width: 31%;
+        align-items: flex-start;
+    }
+}
