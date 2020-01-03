@@ -9,7 +9,7 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0%;
     min-width: 320px;
 }
 
@@ -34,13 +34,13 @@ header {
 .buttons {
     display: flex;
     justify-content: space-between;
-    width: 54%;
+    max-width: 54%;
 }
 
 .authorization button {
-    margin-top: 20px;
+    margin-top: 2rem;
     background: transparent;
-    width: 86px;
+    max-width: 86px;
     height: 32px;
     color: #ffffff;
     font-family: 'Montserrat';
@@ -70,7 +70,7 @@ header {
     font-weight: 700;
     font-size: 2rem;
     color: #ffffff;
-    margin: 120px 0px 40px 0px;
+    margin: 12rem 0rem 4rem 0rem;
     display: flex;
     justify-content: center;
 }
@@ -80,8 +80,8 @@ header {
     font-weight: 700;
     font-size: 3rem;
     color: #ffffff;
-    margin: 0px;
-    width: 91%;
+    margin: 0rem;
+    max-width: 91%;
 }
 
 .header_describe {
@@ -89,7 +89,7 @@ header {
     font-weight: 300;
     font-size: 1.8rem;
     color: #ffffff;
-    margin: 20px 0px;
+    margin: 2rem 0%;
 }
 
 .welcome button {
@@ -109,13 +109,16 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .first_column {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 95%;
 }
 
 .second_column {
@@ -136,12 +139,12 @@ main h2 {
     font-size: 2.2rem;
     color: #333333;
     text-align: center;
-    margin: 70px 0px 20px 0px;
-    width: 84%;
+    margin: 7rem 0rem 2rem 0rem;
+    max-width: 84%;
 }
 
 .partner {
-    width: 81.25%;
+    width: 99%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,7 +156,7 @@ main h2 {
     font-weight: 700;
     font-size: 1.4rem;
     color: #333333;
-    margin: 20px 0px;
+    margin: 2rem 0rem;
 }
 
 .partner img {
@@ -166,8 +169,8 @@ main h2 {
     font-weight: 300;
     font-size: 1.4rem;
     color: #8f8f8f;
-    margin-bottom: 30px;
-    width: 95%;
+    margin-bottom: 3rem;
+    max-width: 220px;
 }
 
 footer {
@@ -182,7 +185,7 @@ footer button {
     border-radius: 20px;
     height: 36px;
     width: 86%;
-    margin-bottom: 57px;
+    margin-bottom: 5.7rem;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.4rem;
@@ -198,25 +201,24 @@ footer button {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 0px 6.5%;
+        margin: 0% 6.5%;
     }
 
     .buttons {
         justify-content: center;
-        
         width: auto;
     }
 
     .authorization button {
-        margin-top: 38px;
+        margin-top: 3.8rem;
     }
 
     .site_name {
-        margin: 50px 0px 160px 0px;
+        margin: 5rem 0rem 16rem 0rem;
     }
 
     main h2 {
-        margin-bottom: 37px;
+        margin-bottom: 3.7rem;
     }
 
     .header_title {
@@ -229,11 +231,11 @@ footer button {
 
     .header_describe {
         font-size: 2.4rem;
-        margin: 44px 0px 39px 0px;
+        margin: 4.4rem 0rem 3.9rem 0rem;
     }
 
     .welcome button {
-        width: 29%;
+        max-width: 29%;
     }
 
     .partners {
@@ -247,7 +249,7 @@ footer button {
         flex-direction: column;
         justify-content: center;
         width: 28%;
-        margin-right: 50px;
+        margin-right: 6.512%;
     }
 
     .second_column {
@@ -258,11 +260,11 @@ footer button {
     }
 
     .partner_name {
-        margin: 22px 0px;
+        margin: 2.2rem 0rem;
     }
 
     .about_partner {
-        margin-bottom: 40px;
+        margin-bottom: 4rem;
     }
 
     footer button {
@@ -273,30 +275,30 @@ footer button {
 
 @media only screen and (min-width: 1024px) {
     .authorization {
-        margin: 0px 17%;
+        margin: 0% 17%;
     }
 
     .header_title {
-        width: 50%;
+        max-width: 50%;
     }
 
     .welcome button {
-        width: 22%;
+        max-width: 22%;
     }
     
     .partner {
-        margin: 0px 3%;
+        margin: 0% 3%;
     }
 
     .first_column, .second_column {
         width: 45%;
         flex-direction: row;
         align-items: flex-start;
-        margin: 0px;
+        margin: 0%;
     }
 
     footer button {
-        width: 18.75%;
+        max-width: 18.75%;
     }
 }
 
