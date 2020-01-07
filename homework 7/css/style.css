@@ -21,7 +21,6 @@ header {
     background-image: url(../img/Vector_Smart_Object.png);
     background-position: center;
     width: 100%;
-    height: 540px;
 }
 
 .authorization {
@@ -40,7 +39,6 @@ header {
 .authorization button {
     margin-top: 2rem;
     background: transparent;
-    max-width: 86px;
     height: 32px;
     color: #ffffff;
     font-family: 'Montserrat';
@@ -63,6 +61,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 138px;
 }
 
 .site_name {
@@ -92,7 +91,7 @@ header {
     margin: 2rem 0%;
 }
 
-.welcome button {
+.header_button {
     color: #ffffff;
     background-color: #ff4e50;
     border: 0px solid #ff4e50;
@@ -102,7 +101,7 @@ header {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.4rem;
-    max-width: 282px;
+    max-width: 62%;
 }
 
 .partners {
@@ -114,17 +113,11 @@ header {
     width: 100%;
 }
 
-.first_column {
+.first_column, .second_column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
-}
-
-.second_column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 280px;
 }
 
 main {
@@ -169,8 +162,8 @@ main h2 {
     font-weight: 300;
     font-size: 1.4rem;
     color: #8f8f8f;
-    margin-bottom: 3rem;
-    max-width: 220px;
+    margin: 0rem 0rem 3rem 0rem;
+    max-width: 73%;
 }
 
 footer {
@@ -189,24 +182,15 @@ footer button {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.4rem;
-    max-width: 280px;
+    max-width: 55%;
 }
 
-@media only screen and (min-width: 768px) {
-    header {
-        height: 700px;
-    }
-
+@media only screen and (min-width: 550px) {
     .authorization {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
         margin: 0% 6.5%;
-    }
-
-    .buttons {
-        justify-content: center;
-        width: auto;
     }
 
     .authorization button {
@@ -217,6 +201,22 @@ footer button {
         margin: 5rem 0rem 16rem 0rem;
     }
 
+    .header_button, footer button {
+        max-width: 40%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 700px;
+    }
+
+    .buttons {
+        justify-content: center;
+        width: auto;
+    }
+
     main h2 {
         margin-bottom: 3.7rem;
     }
@@ -225,7 +225,7 @@ footer button {
         text-align: center;
         font-size: 5.2rem;
         width: 66%;
-        max-width: 505px;
+        max-width: 66%;
         
     }
 
