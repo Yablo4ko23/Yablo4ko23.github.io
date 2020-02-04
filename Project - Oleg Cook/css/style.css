@@ -1,3 +1,7 @@
+.news_section {
+    display: none;
+}
+
 @font-face {
     font-family: 'Myriad Pro';
     src: local(Myriad Pro), url(../fonts/Myriad_Pro/MyriadPro-Regular.ttf);
@@ -7,6 +11,7 @@ html {
     font-family: 'Myriad Pro';
     font-weight: 400;
     font-size: 10px;
+    min-width: 320px;
 }
 
 body {
@@ -40,7 +45,7 @@ header{
 .link{
     height: auto;
     color: #ffffff;
-    font-size: 17px;
+    font-size: 1.7rem;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -76,14 +81,14 @@ header{
 }
 
 .header_heads {
-    font-size: 85px;
+    font-size: 8.5rem;
     color: #ffffff;
     margin: 0px;
     font-weight: normal;
 }
 
 .header_underline { 
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #ffffff;
     letter-spacing: 6px;
     margin: 40px 0px 54px 0px;
@@ -91,7 +96,7 @@ header{
 
 .header_describe{
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
     color: #ffffff;
     width: 400px;
     letter-spacing: 3px;
@@ -103,12 +108,13 @@ header{
     width: 170px;
     height: 45px;
     font-family: 'Myriad Pro';
-    font-size: 20px;
+    font-size: 2rem;
     color: #ffffff;
     background-color: #151d25;
     border-radius: 10px;
     transition: 0.6s;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header_button:hover{
@@ -125,7 +131,7 @@ main {
 }
 
 .about_us {
-    width: 970px;
+    width: 930px;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -138,13 +144,13 @@ main {
 }
 
 #logo {
-    width: 487px;
-    height: 450px;
+    width: 49%;
+    height: auto;
 }
 
 .our_services {
-    width: 429px;
-    height: 287px;
+    width: 49%;
+    height: auto;
 }
 
 .main_heads {
@@ -154,7 +160,7 @@ main {
 }
 
 .main_underline {
-    width: 200px;
+    width: auto;
     color: #9fb0a5;
     letter-spacing: 10px;
     font-size: 2.5rem;
@@ -164,15 +170,15 @@ main {
 .main_describe {
     font-size: 2rem;
     color: #9fb0a5;
-    width: 400px;
+    width: 97%;
     margin: 0px 0px 92px 0px;
 }
 
 .main_button {
-    width: 170px;
+    width: 42.5%;
     height: 45px;
     font-family: 'Myriad Pro';
-    font-size: 20px;
+    font-size: 2rem;
     color: #ffffff;
     background-color: #151d25;
     border-radius: 10px;
@@ -207,12 +213,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: rgba(21, 29, 37, 0.5);
 }
 
 .quote_text {
     letter-spacing: 4px;
     margin: 0px 0px 27px 0px;
+    width: 94%;
 }
 
 .quote_author {
@@ -228,11 +236,13 @@ main {
 
 .example_images {
     margin: 68px 0px 42px 0px;
+    width: auto;
 }
 
 .img_row img {
     width: 293px;
     height: 250px;
+    margin: 5px;
     vertical-align: bottom;
     float: left;
 }
@@ -252,17 +262,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    margin: 17px 0px 132px 0px;
+    margin: 17px 0px 65px 0px;
     transition: all .3s linear;
 
-}
-
-.arrow_bcg:hover {
-    transition: all .3s linear;
-    background-color: #354a64;
-    width: 40px;
-    height: 40px;
 }
 
 .arrow {
@@ -279,7 +281,11 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 1172px;
-    margin-bottom: 160px;
+    margin-bottom: 90px;
+}
+
+.post {
+    width: 30%;
 }
 
 .news{
@@ -290,16 +296,15 @@ main {
 }
 
 .news_head {
-    font-size: 35px;
+    font-size: 3.5rem;
     color: #28374b;
     margin: 0px 0px 58px 0px;
 }
 
 .news_describe {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #28374b;
     margin: 0px 0px 69px 0px;
-    letter-spacing: 3px;
 }
 
 .news_form{
@@ -312,12 +317,12 @@ main {
     height: 50px;
     width: 324px;
     border: 1px solid #151d25;
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 .email::-webkit-input-placeholder{
     color: #28374b;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-family: 'Myriad Pro';
 }
 
@@ -327,7 +332,7 @@ main {
     background-color: #151d25;
     color: #ffffff;
     border: 1px solid #151d25;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-family: 'Myriad Pro';
     transition: 0.6s;
     cursor: pointer;
@@ -481,5 +486,236 @@ footer {
 }
 
 .copyright .footer_describe {
-    width: 503px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .header_heads {
+        font-size: 7rem;
+    }
+
+    .about_us {
+        width: 67%;
+        height: auto;
+        top: 772px;
+    }
+
+    .main_heads {
+        font-size: 3rem;
+    }
+
+    .main_underline {
+        font-size: 1.7rem;
+    }
+
+    .main_describe {
+        margin-bottom: 46px;
+        font-size: 1.7rem;
+    }
+
+    .main_button {
+        font-size: 1.7rem;
+    }
+
+    .img_row img:nth-child(1) {
+        display: none;
+    }
+
+    .insta_posts {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .post {
+        width: inherit;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .news_section {
+        display: none;
+    }
+
+    .footer_info {
+        width: 60%
+    }
+
+    .copyright {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    header {
+        margin-bottom: 150px;
+    }
+
+    .about_us {
+        top: 765px;
+    }
+
+    .main_heads {
+        font-size: 2.5rem;
+    }
+
+    .main_underline {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .main_describe {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .img_row img {
+        width: 235px;
+        height: 200px;
+    }
+
+    .footer_heads {
+        font-size: 2rem;
+    }
+
+    .footer_describe {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        margin-bottom: 100px;
+    }
+
+    .about_us {
+        top: 780px;
+    }
+
+    .main_heads {
+        font-size: 2rem;
+    }
+
+    .main_underline {
+        display: none;
+    }
+
+    .main_describe {
+        font-size: 1.2rem;
+        margin: 10px 0px 15px 0px;
+    }
+
+    .main_button {
+        font-size: 1.3rem;
+        height: 35px;
+        min-width: 85px;
+    }
+
+    .transparent_block {
+        width: 85%;
+    }
+
+    .quote_text {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .quote_author {
+        font-size: 1.5rem;
+    }
+
+    .img_row img:nth-child(2) {
+        display: none;
+    }
+
+    .img_row img {
+        margin: 5px;
+    }
+
+    .footer_info, .copyright {
+        width: 80%;
+    }
+
+    .copyright .footer_describe {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    header {
+        margin-bottom: 50px;
+    }
+
+    .about_us {
+        min-width: 278px;
+        top: 803px;
+    }
+
+    .main_heads {
+        font-size: 1.7rem;
+    }
+
+    .main_describe {
+        margin: 2px 0px;
+        font-size: 1rem;
+    }
+
+    .main_button {
+        height: 25px;
+        font-size: 1rem;
+        min-width: 70px;
+    }
+
+    .quote {
+        margin-bottom: 30px;
+    }
+
+    .example_images {
+        margin-top: 30px;
+    }
+
+    .img_row img {
+        width: 190px;
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .quote_text {
+        letter-spacing: 0px;
+    }
+
+    .img_row img:nth-child(4) {
+        display: none;
+    }
+
+    .insta_posts {
+        margin-bottom: 40px;
+    }
+
+    .post {
+        width: 300px;
+    }
+
+    footer {
+        height: auto;
+    }
+    .footer_heads {
+        font-size: 1.5rem;
+    }
+
+    .footer_describe {
+        font-size: 1.2rem;
+    }
+
+    .footer_bottom {
+        height: 50px;
+    }
+
+    .copyright .footer_describe {
+        width: 85%;
+        font-size: 1.2rem;
+    }
 }
