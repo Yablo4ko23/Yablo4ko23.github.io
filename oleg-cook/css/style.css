@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Myriad Pro';
-    src: local(Myriad Pro), url(../fonts/Myriad_Pro/MyriadPro-Regular.ttf);
+    src: local(Myriad Pro), url(../fonts/Myriad_Pro/MyriadPro-Regular.ttf), url(../fonts/Myriad_Pro/MyriadPro-Regular.OTF);
 }
 
 html {
@@ -17,7 +17,8 @@ body {
 header{
     height: auto;
     background-image: url(../img/top-back.jpg);
-    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
     margin-bottom: 245px;
 }
 
@@ -60,7 +61,6 @@ header{
     transition: .3s ease-in-out;
     transform: translateX(-50%);
     margin-top: 22px;
-
 }
 
 .link:hover:after,
@@ -263,7 +263,6 @@ main {
     align-items: center;
     margin: 17px 0px 65px 0px;
     transition: all .3s linear;
-
 }
 
 .arrow {
@@ -343,19 +342,18 @@ main {
 }
 
 .news_img{
-    justify-content: center;
     margin: 60px 0px 60px 0px;
     display: flex;
     flex-direction: row;
-    background-position: center;
+    justify-content: center;
 }
 
 .img_section_1{
     background-image: url(../img/bottom-1.jpg);
+    background-position: center;
     margin-right: 20px;
     width: 360px;
     height: 260px;
-    border-radius: 10px;
     transition: 0.6s;
     border-radius: 10px;
 }
@@ -378,6 +376,7 @@ main {
     height: 260px;
     transition: 0.6s;
     border-radius: 10px;
+    background-position: center;
 }
 
 .img_section_2:hover{
@@ -398,6 +397,7 @@ main {
     height: 260px;
     transition: 0.6s;
     border-radius: 10px;
+    background-position: center;
 }
 
 .img_section_3:hover{
@@ -516,6 +516,10 @@ footer {
         display: none;
     }
 
+    .arrow_bcg {
+        margin-bottom: 30px;
+    }
+
     .insta_posts {
         width: auto;
         flex-direction: column;
@@ -552,6 +556,10 @@ footer {
         margin-bottom: 150px;
     }
 
+    .welcome {
+        margin-top: 120px;
+    }
+
     .header_heads {
         font-size: 5.5rem;
         max-width: 80%;
@@ -567,7 +575,7 @@ footer {
     }
 
     .about_us {
-        top: 765px;
+        top: 670px;
     }
 
     .main_heads {
@@ -589,12 +597,17 @@ footer {
         height: 200px;
     }
 
+    .insta_posts {
+        margin-bottom: 10px;
+    }
+
+    .post {
+        margin-bottom: 20px;
+    }
+
     .news_head {
         font-size: 3rem;
     }
-
-    
-
     .news_describe {
         font-size: 2rem;
     }
@@ -613,6 +626,12 @@ footer {
 
     .footer_describe {
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 944px) {
+    .about_us {
+        top: 780px;
     }
 }
 
@@ -646,7 +665,7 @@ footer {
     }
 
     .about_us {
-        top: 780px;
+        top: 700px;
     }
 
     .main_heads {
@@ -706,16 +725,23 @@ footer {
         width: 150px;
     }
 
-    .shadow_section, .img_section_1,
-    .img_section_2, .img_section_3 {
-        width: 203px;
-        height: 150px;
+    .img_section_1, .img_section_2, .img_section_3 {
+        width: 163px;
+        height: 120px;
+        display: flex;
+        margin: 0px 5px;
     }
 
-    .shadow_section:hover, .img_section_1:hover,
-    .img_section_2:hover, .img_section_3:hover {
-        width: 213px;
-        height: 160px;
+    .img_section_1:hover, .img_section_2:hover,
+    .img_section_3:hover {
+        width: 163px;
+        height: 120px;
+        box-shadow: none;
+        margin: 0px 5px;
+    }
+
+    .shadow_section {
+        display: none;
     }
 
     .footer_info, .copyright {
@@ -724,6 +750,12 @@ footer {
 
     .copyright .footer_describe {
         font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .about_us {
+        top: 770px;
     }
 }
 
@@ -794,6 +826,7 @@ footer {
 
     .quote {
         margin-bottom: 30px;
+        height: 350px;
     }
 
     .example_images {
@@ -831,12 +864,26 @@ footer {
         height: 44px;
     }
 
-    .img_section_1, .img_section_3 {
-        display: none;
+    .news_img {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0px;
     }
 
-    .img_section_2 {
-        display: flex;
+    .img_section_1, .img_section_2, .img_section_3 {
+        margin: 10px 0px;
+    }
+
+    .img_section_1:hover, .img_section_2:hover,
+    .img_section_3:hover {
+        margin: 10px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 501px) {
+    .about_us {
+        top: 525px;
     }
 }
 
@@ -863,16 +910,22 @@ footer {
         top: 385px;
     }
 
+    .quote {
+        height: 300px;
+    }
+
     .quote_text {
         letter-spacing: 0px;
     }
 
-    .img_row img:nth-child(4) {
-        display: none;
+    .img_row img {
+        width: 235px;
+        height: 200px;
+        margin: 10px 0px;
     }
 
-    .insta_posts {
-        margin-bottom: 40px;
+    .img_row img:nth-child(4) {
+        display: none;
     }
 
     .news_describe {
@@ -880,7 +933,7 @@ footer {
     }
 
     .email {
-        width: 150px;
+        width: 180px;
     }
 
     .email::-webkit-input-placeholder {
@@ -893,15 +946,16 @@ footer {
     }
 
     .footer_info {
-        height: 250px;
+        height: 200px;
     }
 
     .contacts, .work_time {
-        height: 200px;
+        height: 150px;
     }
 
     .footer_heads {
         font-size: 1.5rem;
+        margin-bottom: 15px;
     }
 
     .footer_describe {
@@ -916,5 +970,11 @@ footer {
     .copyright .footer_describe {
         width: 85%;
         font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .about_us {
+        top: 400px;
     }
 }
