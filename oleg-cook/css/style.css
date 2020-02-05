@@ -281,8 +281,6 @@ main {
     margin-bottom: 90px;
 }
 
-
-
 .news{
     display: flex;
     flex-direction: column;
@@ -517,12 +515,12 @@ footer {
         margin-bottom: 30px;
     }
 
-    /* .insta_posts {
+    .insta_posts {
         width: auto;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 40px;
-    } */
+    }
 
     .post {
         max-width: inherit;
