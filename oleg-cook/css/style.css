@@ -278,13 +278,10 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1172px;
     margin-bottom: 90px;
 }
 
-.post {
-    width: 30%;
-}
+
 
 .news{
     display: flex;
@@ -520,18 +517,17 @@ footer {
         margin-bottom: 30px;
     }
 
-    .insta_posts {
+    /* .insta_posts {
         width: auto;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 40px;
-    }
+    } */
 
     .post {
         max-width: inherit;
         height: auto;
         margin-bottom: 50px;
-        width: 100%;
     }
 
     .shadow_section, .img_section_1,
