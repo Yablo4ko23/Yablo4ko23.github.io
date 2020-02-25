@@ -60,7 +60,7 @@
 // let width = 10,
 //     heiht = 23,
 //     s = width*heiht;
-// alert(S);
+// alert(s);
 
 //7 номер
 // const p = 3.14;
@@ -73,18 +73,18 @@
 //8 номер
 // let n = 3,
 //     m = 4,
-//     k = Math.sqrt(3**2 + 4**2);
+//     k = Math.sqrt(Math.pow(3, 2) + Math.pow(4, 2));
 // alert(k);
 
 //8 номер(з сайту)
 // let s = 2000,
 //     p = 10,
 //     years = 5,
-//     perepl = ((s/p*5)+s)-s;
+//     perepl = (((s/100*10)*5)+s)-s;
 // alert(perepl);
 
 //7 номер(з сайту)
 // let nFib = 12,
 //     el = 12,
-//     fn = Math.pow(nFib, el);
+//     fn = nFib*el;
 // alert(fn);
