@@ -9,17 +9,17 @@
 // console.log(Number.parseInt(k4));
 
 //2
-// let k1='5px',
-//     k2='12djd334',
-//     k3='12.45asdwe12',
-//     k4='qwqweeewq';
+// let k1="5px",
+//     k2="12djd334",
+//     k3="12.45asdwe12",
+//     k4="qwqweeewq";
 // console.log(Number.parseFloat(k1));
 // console.log(Number.parseFloat(k2));
 // console.log(Number.parseFloat(k3));
 // console.log(Number.parseFloat(k4));
 
 //3
-// let random = Math.floor(Math.random() * (10 - 1) + 1);
+// let random = Math.floor(Math.random() * 10) + 1;
 // console.log(Math.pow(random, 2));
 
 //4
@@ -49,7 +49,8 @@
 // console.log(!1);
 // console.log(!0);
 
-//9
+//ВІТЯ ЦЕ МЕГАТАСК, ЛОЛ!
+//ВІТЯ НЕ БИЙ!!!!! ЦЕ ВСЕ ЩО Я ПРИДУМАВ :-)
 // let a = 1,
 //     b = 4,
 //     c = 4,
@@ -57,8 +58,6 @@
 //     x1 = (-b-Math.sqrt(d))/2*a,
 //     x2 = (-b+Math.sqrt(d))/2*a,
 //     x = -b/(2*a);
-
-//ВІТЯ НЕ БИЙ!!!!! ЦЕ ВСЕ ЩО Я ПРИДУМАВ :-)
 
 // if (d>0) {
 //     console.log('Корені: ', x1, x2);
