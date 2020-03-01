@@ -80,7 +80,7 @@
 // let s = 2000,
 //     p = 10,
 //     years = 5,
-//     perepl = (((s/100*10)*5)+s)-s;
+//     perepl = (((s/100*p)*years)+s)-s;
 // alert(perepl);
 
 //7 номер(з сайту)
