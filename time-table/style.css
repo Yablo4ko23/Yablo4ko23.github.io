@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: local(Open-Sans), url(./Open_Sans/Open_Sans_Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: local(Open-Sans), url(./Open_Sans/Open_Sans_Bold.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans Regular';
+}
+
+h1 {
+    color: #ff4e50;
+    font-size: 45px;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans Bold';
+    margin: 20px 0px;
+    width: 380px;
+    background-color: greenyellow;
+    border-radius: 15px;
+}
+
+.time-table {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-table img {
+    width: 150px;
+    height: 200px;
+}
+
+.navigation {
+    margin-right: 40px;
+    list-style-type: none;
+    color: darkblue;
+}
+
+li {
+    margin: 9px 0px;
+    background-color: yellow;
+    text-align: center;
+    height: 40px;
+    width: 210px;
+    border-radius: 15px;
+}
+
+.link {
+    font-size: 25px;
+    text-decoration: none;
+    color: green;
+    font-weight: 700;
+    position: relative;
+}
+
+.link:after {
+    background-color: green;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    transition: .3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.link:hover:after,
+.link:focus:after {
+    width: 100%;
+}
+
+.subjects {
+    color: blueviolet;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 15px 0px;
+    padding: 0px;
+}
+
+.exit {
+    text-decoration: none;
+    color: olive;
+    width: auto;
+    position: relative;
+}
+
+.exit:after {
+    background-color: olive;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    transition: .3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.exit:hover:after,
+.exit:focus:after {
+    width: 100%;
+}
+
+h2 {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: powderblue; 
+    border-radius: 15px;   
+}
