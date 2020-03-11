@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: local(Montserrat), url(../fonts/Montserrat/Montserrat-Regular.ttf), url(../fonts/Montserrat/Montserrat-Bold.ttf);
+    font-family: 'Montserrat Bold';
+    src: local(Montserrat), url(../fonts/Montserrat/Montserrat-Bold.ttf), url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: local(Montserrat), url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
 
 @font-face {
@@ -10,42 +15,51 @@
 
 @font-face {
     font-family: 'Brush Script Std';
-    src: local(Brush Script Std), url(../fonts/Brush_Script_Std/);
+    src: local(Brush Script Std), url(../fonts/Brush_Script_Std/Brush_Script_Std.ttf);
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: local(Open-Sans), url(../fonts/Open_Sans/Open_Sans_Regular.ttf), url(../fonts/Open_Sans/Open_Sans_Bold.ttf);
+    font-family: 'Open Sans Bold';
+    src: local(Open-Sans), url(../fonts/Open_Sans/Open_Sans_Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: local(Open-Sans), url(../fonts/Open_Sans/Open_Sans_Regular.ttf);
 }
 
 html {
     font-size: 10px;
-    min-width: 340px;
+    min-width: 330px;
 }
 
 body {
     margin: 0px;
+    background-color: #f6f6f6;
 }
 
 header{
     height: auto;
-    background-image: url(../img/top-back.jpg);
-    background-position: top;
+    background-color: rgba(157, 157, 157, 0.5);
+    background-image: url(../img/hero-img-slide.jpg);
+    background-position: bottom left;
     background-repeat: no-repeat;
-    margin-bottom: 245px;
+    margin-bottom: 428px;
 }
 
 .navigation{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.59);
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     height: auto;
 }
 
 .navigation_list{
-    margin: 25px 0px;
+    margin: 15px 0px;
     padding: 0px;
-    width: 400px;
+    width: 470px;
     height: 30px;
     display: flex;
     justify-content: space-around;
@@ -54,85 +68,76 @@ header{
 }
 
 .link{
+    font-family: 'Montserrat Bold';
+    font-size: 1.4rem;
     height: auto;
     color: #ffffff;
-    font-size: 1.7rem;
     text-decoration: none;
     display: flex;
     justify-content: center;
-    position: relative;
+    transition: 1s;
 }
 
-.link:after {
-    background-color: #ffffff;
-    display: block;
-    content: "";
-    height: 3px;
-    width: 0%;
-    left: 50%;
-    position: absolute;
-    transition: .3s ease-in-out;
-    transform: translateX(-50%);
-    margin-top: 22px;
+.link:hover {
+    color: #ffd71b;
+    transition: 1s;
 }
 
-.link:hover:after,
-.link:focus:after {
-    width: 100%;
+.header_line {
+    background-color: #ffd71b;
+    width: 2px;
+    height: 14px;
 }
 
 .welcome {
     display: flex;
+    background-color: rgba(0, 0, 0, 0.35);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 174px;
-    padding-bottom: 220px;
+    padding: 174px 0px 220px 0px;
 }
 
 .header_heads {
-    font-size: 8.5rem;
+    font-family: 'Montserrat Bold';
+    font-size: 6.7rem;
     color: #ffffff;
     margin: 0px;
-    font-weight: normal;
 }
 
-.header_underline { 
-    font-size: 1.6rem;
+.header_title {
+    font-family: 'Mr Dafoe';
+    font-weight: 400;
+    font-size: 8rem;
     color: #ffffff;
-    letter-spacing: 6px;
-    margin: 40px 0px 54px 0px;
+    margin: 0px 0px 16px 0px;
+}
+
+.header_underline {
+    margin: 0px;
+    background-color: #ffd71b;
+    width: 125px;
+    height: 1px;
 }
 
 .header_describe{
     text-align: center;
-    font-size: 2rem;
+    font-family: 'Montserrat Regular';
+    font-size: 1.6rem;
+    margin: 40px 0px 80px 0px;
     color: #ffffff;
-    max-width: 28%;
-    letter-spacing: 3px;
-    margin: 0px 0px 68px 0px;
-    font-weight: normal;
 }
 
 .header_button{
-    max-width: 170px;
-    height: 45px;
-    font-family: 'Myriad Pro';
-    font-size: 2rem;
-    color: #ffffff;
-    background-color: #151d25;
-    border-radius: 10px;
-    transition: 0.6s;
+    background-color: #ffd71b;
+    color: #000000;
+    font-family: 'Montserrat Bold';
+    font-size: 1.6rem;
+    width: 230px;
+    height: 50px;
+    border: 0px;
     cursor: pointer;
-    text-decoration: none;
-}
-
-.header_button:hover{
-    color: #151d25;
-    background-color: #ffffff;
-    border-radius: 10px;
-    transition: 0.6s;
 }
 
 main {
@@ -142,100 +147,135 @@ main {
 }
 
 .about_us {
-    width: 930px;
+    width: 912px;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-self: center;
     position: absolute;
     top: 747px;
-    z-index: 5;
+    z-index: 2;
 }
 
-#logo {
-    width: 49%;
-    height: auto;
+.about_img  {
+    background-image: url(../img/about-us.jpg);
+    background-repeat: no-repeat;
+    width: 456px;
+    height: 426px;
+}
+
+#our_services {
+    width: 456px;
+    display: flex;
+    justify-content: center;
 }
 
 .our_services {
-    width: 49%;
-    height: auto;
+    width: 318px;
 }
 
 .main_heads {
-    font-size: 3.5rem;
-    color: #28374b;
+    font-size: 3.8rem;
+    color: #000000;
     margin: 0px;
-}
-
-.main_underline {
-    max-width: auto;
-    color: #9fb0a5;
-    letter-spacing: 10px;
-    font-size: 2.5rem;
-    margin: 5px 0px 30px 0px;
+    font-family: 'Montserrat Bold';
 }
 
 .main_describe {
-    font-size: 2rem;
-    color: #9fb0a5;
-    max-width: 97%;
-    margin: 0px 0px 92px 0px;
+    font-family: 'Montserrat Regular';
+    font-size: 1.6rem;
+    color: #6b6f7a;
+    margin: 35px 0px 60px 0px;
+    line-height: 25px;
 }
 
 .main_button {
-    max-width: 42.5%;
-    height: 45px;
-    font-family: 'Myriad Pro';
-    font-size: 2rem;
-    color: #ffffff;
-    background-color: #151d25;
-    border-radius: 10px;
-    transition: 0.6s;
+    border: 1px solid #000000;
+    font-family: 'Montserrat Bold';
+    font-size: 1.6rem;
+    width: 230px;
+    height: 50px;
+    color: #000000;
+    background-color: #ffffff;
     cursor: pointer;
 }
 
-.main_button:hover {
-    color: #151d25;
-    background-color: #ffffff;
-    border-radius: 10px;
-    transition: 0.6s;
-}
 
 .quote {
-    height: 472px;
-    margin-bottom: 77px;
-    background-image: url(../img/second.jpg);
+    height: 342px;
+    margin-bottom: 100px;
+    background-image: url(../img/quote-img-bg.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dfg {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
-.transparent_block {
-    width: 744px;
-    height: 158px;
+.quote_block {
     color: #ffffff;
-    font-size: 2rem;
+    width: 790px;
     display: flex;
     flex-direction: column;
+    justify-self: center;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(21, 29, 37, 0.5);
+}
+
+.top_rosemary_block {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 5;
+    width: 36.5%;
+    align-items: center;
+    top: 1400px;
+    
 }
 
 .quote_text {
+    font-family: 'Brush Script Std';
+    font-size: 4.5rem;
     letter-spacing: 4px;
     margin: 0px 0px 27px 0px;
-    max-width: 94%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.first_part {
+    text-align: left;
+    margin: 0px;
+}
+
+.second_part {
+    text-align: right;
+    margin: 0px;
+}
+
+.author_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    align-items: center;
+    width: 380px;
 }
 
 .quote_author {
+    font-family: 'Brush Script Std';
+    font-size: 2.9rem;
     margin: 0px;
 }
 
@@ -247,7 +287,7 @@ main {
 }
 
 .example_images {
-    margin: 68px 0px 42px 0px;
+    margin: 57px 0px 42px 0px;
     max-width: auto;
 }
 
@@ -271,26 +311,53 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 90px;
-    width: 1124px;
+    margin: 63px 0px 90px 0px;
+    width: 1064px;
 }
 
-.news{
+.bottom_rosemary_block {
+    transform: scale(-1, 1); 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 32%;
+    z-index: 5;
+    top: 3280px;
+}
+
+#dfg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news {
+    background-image: url(../img/bg-light.jpg);
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+    height: 370px;
+    font-family: 'Montserrat Bold';
 }
 
 .news_head {
-    font-size: 3.5rem;
-    color: #28374b;
-    margin: 0px 0px 58px 0px;
+    font-size: 3.8rem;
+    color: #000000;
+    margin: 0px;
 }
 
 .news_describe {
-    font-size: 2.5rem;
-    color: #28374b;
-    margin: 0px 0px 69px 0px;
+    font-size: 1.6rem;
+    color: #000000;
+    margin: 29px 0px 45px 0px;
+
 }
 
 .news_form{
@@ -299,35 +366,30 @@ main {
 }
 
 .email{
-    padding-left: 38px;
-    height: 50px;
-    width: 324px;
-    border: 1px solid #151d25;
-    font-size: 1.7rem;
+    padding-left: 22px;
+    height: 46px;
+    width: 327px;
+    border: 1px solid #000000;
+    font-weight: 400;
+    font-size: 1.6rem;
+
 }
 
 .email::-webkit-input-placeholder{
-    color: #28374b;
-    font-size: 2.2rem;
-    font-family: 'Myriad Pro';
+    color: #6b6f7a;
+    font-size: 1.6rem;
+    font-family: 'Montserrat Regular';
 }
 
 .subscribe{
-    height: 54px;
-    width: 200px;
-    background-color: #151d25;
-    color: #ffffff;
-    border: 1px solid #151d25;
-    font-size: 2.2rem;
-    font-family: 'Myriad Pro';
-    transition: 0.6s;
+    height: 50px;
+    width: 230px;
+    background-color: #ffd71b;
+    color: #000000;
+    border: 1px solid #ffd71b;
+    font-size: 1.6rem;
+    font-family: 'Montserrat Bold';
     cursor: pointer;
-}
-
-.subscribe:hover {
-    background-color: #27364a;
-    color: #ffffff;
-    transition: 0.6s;
 }
 
 footer {
@@ -336,7 +398,6 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Open Sans';
 }
 
 .footer_info {
@@ -346,6 +407,13 @@ footer {
     align-items: flex-start;
     width: 1070px;
     margin: 90px 0px;
+}
+
+.info_block {
+    display: flex;
+    flex-direction: row;
+    width: 475px;
+    justify-content: space-between;
 }
 
 .contacts, .work_time, #logo, .follow_us {
@@ -359,10 +427,12 @@ footer {
     font-size: 1.8rem;
     color: #919191;
     font-weight: 400;
+    font-family: 'Open Sans Regular';
 }
 
 .footer_info a {
     color: #ffd71b;
+    font-family: 'Open Sans Regular';
 }
 
 .footer_underline {
@@ -377,6 +447,7 @@ footer {
     font-size: 2.6rem;
     color: #e9e9e9;
     font-weight: 700;
+    font-family: 'Open Sans Bold';
 }
 
 #logo {
@@ -394,7 +465,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Regular';
     font-weight: 400;
     font-size: 14px;
 }
@@ -404,38 +475,7 @@ footer {
 }
 
 @media only screen and (max-width: 1300px) {
-    .header_heads {
-        font-size: 6.5rem;
-    }
-
-    .header_describe {
-        max-width: 37.7%;
-    }
-
-    .about_us {
-        width: 67%;
-        height: auto;
-        top: 772px;
-    }
-
-    .main_heads {
-        font-size: 3rem;
-    }
-
-    .main_underline {
-        font-size: 1.7rem;
-    }
-
-    .main_describe {
-        margin-bottom: 46px;
-        font-size: 1.7rem;
-    }
-
-    .main_button {
-        font-size: 1.7rem;
-    }
-
-    .img_row img:nth-child(1) {
+    .img_row img:nth-child(4) {
         display: none;
     }
 
@@ -452,79 +492,94 @@ footer {
         margin-bottom: 50px;
     }
 
-    .shadow_section, .img_section_1,
-    .img_section_2, .img_section_3 {
-        width: 270px;
-        height: 195px;
-    }
-
-    .shadow_section:hover, .img_section_1:hover,
-    .img_section_2:hover, .img_section_3:hover {
-        width: 280px;
-        height: 205px;
+    .bottom_rosemary_block {
+        top: 4480px;
     }
 
     .footer_info {
         width: 82.3%;
     }
-
-    #logo {
-        font-size: 3rem;
-    }
-
-    .footer_heads {
-        font-size: 2rem;
-    }
-
-    .footer_describe {
-        font-size: 1.5rem;
-    }
 }
 
 @media only screen and (max-width: 1024px) {
     header {
-        margin-bottom: 150px;
-    }
-
-    .welcome {
-        margin-top: 120px;
+        margin-bottom: 730px;
     }
 
     .header_heads {
-        font-size: 5.5rem;
-        max-width: 80%;
+        font-size: 5.7rem;
+    }
+
+    .header_title {
+        font-size: 7.4rem;
     }
 
     .header_describe {
-        font-size: 1.7rem;
         max-width: 42.5%;
     }
 
-    .header_button {
-        font-size: 1.7rem;
-    }
-
     .about_us {
-        top: 670px;
+        flex-direction: column;
+        width: auto;
+        align-items: start;
+        top: 780px;
     }
 
-    .main_heads {
-        font-size: 2.5rem;
+    .about_img {
+        background-image: url(../img/about_us_tablet.jpg);
+        background-position: bottom left;
+        width: 540px;
+        height: 350px;
     }
 
-    .main_underline {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
+    #our_services {
+        align-self: center;
+    }
+
+    .our_services {
+        margin: 65px 0px;
+        width: 390px;
     }
 
     .main_describe {
-        font-size: 1.5rem;
-        margin-bottom: 30px;
+        font-size: 1.4rem;
+        margin: 30px 0px 40px 0px;
+    }
+
+    .top_rosemary_block {
+        top: 1680px;
+    }
+
+    .top_rosemary_block img {
+        width: 220px;
+        height: 260px;
+    }
+
+    .quote_block {
+        width: 590px;
+    }
+
+    .quote_text {
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+
+    .first_part {
+        text-align: right;
     }
 
     .img_row img {
         width: 235px;
         height: 200px;
+    }
+
+    .instagram h3 {
+        width: 450px;
+        text-align: center;
+    }
+
+    .news {
+        height: 360px;
     }
 
     .insta_posts {
@@ -535,412 +590,254 @@ footer {
         margin-bottom: 20px;
     }
 
-    .news_head {
-        font-size: 3rem;
-    }
-    .news_describe {
-        font-size: 2rem;
-    }
-
-    .subscribe {
-        font-size: 2rem;
+    .bottom_rosemary_block {
+        width: 31.25%;
+        top: 4540px;
+        flex-wrap: wrap;
     }
 
-    .img_section_2 {
-        display: none;
+    .bottom_rosemary_block img {
+        width: 220px;
+        height: 260px;
     }
 
     .footer_info {
-        margin: 70px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin-top: 75px;
     }
 
-    #logo {
-        font-size: 2.5rem;
+    .info_block, .logo_block, .follow_block {
+        display: flex;
+        flex-direction: row;
     }
 
-    .footer_heads {
-        font-size: 1.7rem;
+    .info_block {
+        margin: 45px 0px;
     }
 
-    .footer_describe {
-        font-size: 1.3rem;
-    }
-
-    .copyright p {
-        font-size: 1.2rem;
-    }
-}
-
-@media only screen and (max-width: 944px) {
-    .about_us {
-        top: 780px;
+    .follow_block {
+        position: relative;
+        right: 110px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    header {
-        margin-bottom: 100px;
-    }
-
-    .link {
-        font-size: 1.5rem;
-    }
-
     .header_heads {
-        font-size: 4rem;
-        max-width: 55%;
+        font-size: 4.8rem;
     }
 
-    .header_underline {
-        font-size: 1.2rem;
+    .header_title {
+        font-size: 6.8rem;
     }
 
     .header_describe {
-        font-size: 1.5rem;
-        max-width: 52%;
-    }
-
-    .header_button {
-        font-size: 1.5rem;
-        max-width: 140px;
-        height: 35px;
-    }
-
-    .about_us {
-        top: 700px;
-    }
-
-    .main_heads {
-        font-size: 2rem;
-    }
-
-    .main_underline {
-        display: none;
-    }
-
-    .main_describe {
-        font-size: 1.2rem;
-        margin: 10px 0px 15px 0px;
-    }
-
-    .main_button {
-        font-size: 1.3rem;
-        height: 35px;
-        min-width: 85px;
-    }
-
-    .transparent_block {
-        width: 85%;
-    }
-
-    .quote_text {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-    }
-
-    .quote_author {
-        font-size: 1.5rem;
-    }
-
-    .img_row img:nth-child(2) {
-        display: none;
-    }
-
-    .news_head {
-        font-size: 2.5rem;
-    }
-
-    .news_describe {
-        font-size: 1.7rem;
-    }
-
-    .email {
-        width: 260px;
-    }
-
-    .email::-webkit-input-placeholder {
-        font-size: 1.7rem;
-    }
-
-    .subscribe {
-        font-size: 1.7rem;
-        width: 150px;
-    }
-
-    .footer_info {
-        margin: 50px 0px;
-    }
-
-    #logo {
-        font-size: 2rem;
-    }
-
-    .footer_heads {
-        font-size: 1.3rem;
-    }
-
-    .footer_underline {
-        width: 50px;
-    }
-
-    .footer_describe {
-        font-size: 1rem;
-    }
-
-    #insta_logo {
-        margin-top: 5px;
-        width: 21px;
-        height: 21px;
-    }
-
-}
-
-@media only screen and (max-width: 668px) {
-    .about_us {
-        top: 770px;
-    }
-}
-
-@media only screen and (max-width: 560px) {
-    header {
-        margin-bottom: 50px;
-    }
-
-    .navigation_list {
-        width: 71.4%;
-        margin: 15px 0px;
-    }
-
-    .link {
-        font-size: 1.2rem;
-    }
-
-    #insta_logo {
-        width: 15px;
-        height: 15px;
-    }
-
-    .welcome {
-        margin-top: 100px;
-        padding-bottom: 110px;
-    }
-
-    .header_heads {
-        font-size: 3.5rem;
-        max-width: 64.1%;
-    }
-
-    .header_underline {
-        margin: 20px 0px 27px 0px;
-    }
-
-    .header_describe {
-        font-size: 1.2rem;
-        max-width: 60%;
+        font-size: 1.6rem;
+        max-width: 58%;
         margin-bottom: 40px;
     }
 
-    .header_button {
-        font-size: 1.2rem;
-        max-width: 120px;
-        height: 30px;
-    }
-
     .about_us {
-        min-width: 278px;
-        top: 460px;
+        top: 730px;
     }
 
-    .main_heads {
-        font-size: 1.7rem;
-    }
-
-    .main_describe {
-        margin: 2px 0px;
-        font-size: 1rem;
-    }
-
-    .main_button {
-        height: 25px;
-        font-size: 1rem;
-        min-width: 70px;
-    }
-
-    .quote {
-        margin-bottom: 30px;
-        height: 350px;
-    }
-
-    .example_images {
-        margin-top: 30px;
-    }
-
-    .img_row img {
-        width: 190px;
-        height: 160px;
-    }
-
-    .news_head {
-        font-size: 2rem;
-        margin-bottom: 29px;
-    }
-
-    .news_describe {
-        font-size: 1.5rem;
-        margin-bottom: 35px;
-    }
-
-    .email {
-        width: 200px;
-        height: 40px;
-        padding-left: 13px;
-    }
-
-    .email::-webkit-input-placeholder {
-        font-size: 1.5rem;
-    }
-
-    .subscribe {
-        font-size: 1.5rem;
-        width: 130px;
-        height: 44px;
-    }
-
-    .footer_info {
-        margin: 30px 0px;
-    }
-
-    #logo {
-        font-size: 1.5rem;
-    }
-
-    .footer_heads {
-        font-size: 1.1rem;
-    }
-
-    .footer_underline {
-        width: 35px;
-        margin: 10px 0px 5px 0px;
-    }
-
-    .footer_describe {
-        font-size: 0.8rem;
-    }
-
-    .copyright {
-        height: 30px;
-    }
-
-    .copyright p {
-        font-size: 1rem;
-    }
-
-}
-
-@media only screen and (max-width: 501px) {
-    .about_us {
-        top: 525px;
+    .img_row img:nth-child(3) {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 425px) {
-    .navigation_list {
-        margin: 7px 0px;
+@media only screen and (max-width: 600px) {
+    header {
+        margin-bottom: 705px;
     }
 
-    .welcome {
-        margin-top: 60px;
-        padding-bottom: 85px;
+    .navigation {
+        flex-direction: column;
     }
 
-    .header_heads {
-        font-size: 3rem;
-        max-width: 81.8%;
-    }
-
-    .header_describe {
-        max-width: 78%;
-    }
-
-    .about_us {
-        top: 385px;
-    }
-
-    .quote {
-        height: 300px;
-    }
-
-    .quote_text {
-        letter-spacing: 0px;
-    }
-
-    .img_row img {
-        width: 235px;
-        height: 200px;
-        margin: 10px 0px;
-    }
-
-    .img_row img:nth-child(4) {
+    li:nth-child(6) {
         display: none;
     }
 
-    .news_describe {
-        font-size: 1.4rem;
+    .navigation #insta_logo {
+        margin: 7px 0px 19px 0px;
     }
 
-    .email {
-        width: 180px;
+    .navigation_list {
+        width: 270px;
+        justify-content: space-between;
+        margin-bottom: 0px;
     }
 
-    .email::-webkit-input-placeholder {
-        font-size: 1.3rem;
-    }
-
-    .subscribe {
-        font-size: 1.3rem;
-        width: 110px;
-    }
-
-    .footer_info {
-        min-width: 295px;
-        margin: 15px 0px;
-    }
-
-    #logo {
+    .link {
         font-size: 1.2rem;
     }
 
+    .welcome {
+        padding: 55px 0px 80px 0px;
+    }
+
+    .header_heads {
+        font-size: 1.9rem;
+    }
+
+    .header_title {
+        font-size: 3.8rem;
+    }
+
+    .header_describe {
+        font-size: 1.4rem;
+        width: 52.5%;
+    }
+
+    .about_us {
+        width: 280px;
+        top: 450px;
+    }
+
+    #our_services {
+        width: auto;
+    }
+
+    .our_services {
+        width: 230px;
+        margin: 50px 25px;
+    }
+
+    .about_img {
+        background-image: url(../img/about-us.jpg);
+        width: 280px;
+        height: 350px;
+        background-position: center;
+    }
+
+    .main_heads {
+        font-size: 2rem;
+    }
+
+    .quote {
+        margin-bottom: 40px;
+    }
+
+    .top_rosemary_block {
+        top: 1360px;
+    }
+
+    .quote_text {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        margin: 0px;
+    }
+
+    .first_part {
+        text-align: center;
+        width: 250px;
+    }
+
+    .second_part {
+        width: 320px;
+        text-align: center;
+    }
+
+    .author_block {
+        flex-direction: column;
+        align-self: center;
+        width: auto;
+    }
+
+    .author_block .header_underline {
+        margin: 20px 0px;
+    }
+
+    .quote_author {
+        font-size: 2rem;
+    }
+
+    .example_images {
+        margin-top: 25px;
+    }
+
+    .img_row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_row:nth-child(2),
+    .img_row:nth-child(3) {
+        display: none;
+    }
+
+    .img_row img {
+        width: 280px;
+        height: 250px;
+    }
+
+    .instagram .main_heads {
+        width: 235px;
+    }
+
+    .insta_posts {
+        margin: 25px 0px 40px 0px;
+    }
+
+    .post {
+        margin: 0px;
+    }
+
+    .bottom_rosemary_block {
+        top: 3850px;
+    }
+
+    .news {
+        height: 325px;
+    }
+
+    .news_describe {
+        width: 250px;
+        margin: 18px 0px 22px 0px;
+    }
+
+    .news_form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email {
+        margin-bottom: 25px;
+        width: 256px;
+    }
+
+    .footer_info {
+        margin: 30px 0px 50px 0px;
+    }
+
+    .info_block {
+        flex-direction: column;
+        width: auto;
+        margin: 25px 0px;
+    }
+
+    .contacts {
+        margin-bottom: 30px;
+    }
+
+    .follow_block {
+        right: 8px;
+    }
+
     .footer_heads {
-        font-size: 0.9rem;
-    }
-
-    .footer_underline {
-        width: 20px;
-        margin: 5px 0px 3px 0px;
-    }
-
-    .footer_describe {
-        font-size: 0.7rem;
-        margin: 2px 0px;
-    }
-
-    .copyright {
-        height: 25px;
-    }
-
-    #insta_logo {
-        margin-top: 2px;
-        width: 12px;
-        height: 12px;
+        font-size: 2rem;
     }
 
     .copyright p {
-        font-size: 0.7rem;
-    }
-}
-
-@media only screen and (max-width: 340px) {
-    .about_us {
-        top: 400px;
+        text-align: center;
+        width: 230px;
     }
 }
