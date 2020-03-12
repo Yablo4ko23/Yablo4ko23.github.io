@@ -221,7 +221,7 @@ main {
     justify-content: flex-start;
 }
 
-.dfg {
+.quote_main_block {
     width: 100%;
     height: auto;
     display: flex;
@@ -242,14 +242,7 @@ main {
 
 .top_rosemary_block {
     position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    z-index: 5;
-    width: 36.5%;
-    align-items: center;
-    top: 1400px;
-    
+    display: none;
 }
 
 .quote_text {
@@ -325,7 +318,7 @@ main {
 .bottom_rosemary_block {
     transform: scale(-1, 1); 
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: flex-end;
     width: 32%;
@@ -333,7 +326,7 @@ main {
     top: 3280px;
 }
 
-#dfg {
+.news_main_block {
     width: 100%;
     height: auto;
     display: flex;
@@ -521,10 +514,6 @@ footer {
         margin-bottom: 50px;
     }
 
-    .bottom_rosemary_block {
-        top: 4480px;
-    }
-
     .footer_info {
         width: 82.3%;
     }
@@ -568,20 +557,16 @@ footer {
     .our_services {
         margin: 65px 0px;
         width: 390px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .main_describe {
         font-size: 1.4rem;
         margin: 30px 0px 40px 0px;
-    }
-
-    .top_rosemary_block {
-        top: 1680px;
-    }
-
-    .top_rosemary_block img {
-        width: 220px;
-        height: 260px;
     }
 
     .quote_block {
@@ -617,17 +602,6 @@ footer {
 
     .post {
         margin-bottom: 20px;
-    }
-
-    .bottom_rosemary_block {
-        width: 31.25%;
-        top: 4540px;
-        flex-wrap: wrap;
-    }
-
-    .bottom_rosemary_block img {
-        width: 220px;
-        height: 260px;
     }
 
     .footer_info {
@@ -723,7 +697,7 @@ footer {
 
     .about_us {
         width: 280px;
-        top: 450px;
+        top: 470px;
     }
 
     #our_services {
@@ -733,12 +707,15 @@ footer {
     .our_services {
         width: 230px;
         margin: 50px 25px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
     }
 
     .about_img {
         background-image: url(../img/about-us.jpg);
         width: 280px;
-        height: 350px;
+        height: 320px;
         background-position: center;
     }
 
@@ -752,6 +729,18 @@ footer {
 
     .top_rosemary_block {
         top: 1360px;
+        display: flex;
+        justify-content: center;
+        width: 36.5%;
+        flex-direction: row;
+        z-index: 5;
+        align-items: center;
+        top: 1400px;
+    }
+
+    .top_rosemary_block img {
+        width: 75%;
+        height: auto;
     }
 
     .quote_text {
@@ -820,7 +809,17 @@ footer {
     }
 
     .bottom_rosemary_block {
-        top: 3850px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 32%;
+        z-index: 5;
+        top: 3900px;
+    }
+
+    .bottom_rosemary_block img {
+        width: 75%;
+        height: auto;
     }
 
     .news {
@@ -877,4 +876,15 @@ footer {
         text-align: center;
         width: 230px;
     }
+}
+
+@media only screen and (max-width: 375px) {
+    .top_rosemary_block {
+        top: 1450px;
+    }
+
+    /* .bottom_rosemary_block {
+        top: 3950px;
+        justify-content: flex-start;
+    } */
 }
