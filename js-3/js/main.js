@@ -48,7 +48,7 @@
 // if (name.length>4 && surname.length>5) {
 //     console.log(name.length + surname.length);
 // } else {
-//     console.log("УПС")
+//     console.log("УПС");
 // }
 
 //7 
