@@ -55,13 +55,12 @@
 
 //7
 // function operation(m, n, o) {
-//     function o(a, b) {
-//         o = a+b;
-//     }
-//     o(1, 2);
-//     console.log(m*n*o);
-// }
-// operation(2, 3);
+//     console.log(m+n+o);
+// }    
+// let o = function(a, b) {
+//     return a+b;
+// };
+// operation(2, 3, o(1,3));
 
 //8
 // function addN(n) {
