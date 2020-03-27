@@ -17,7 +17,7 @@
 // mull(3, 2);
 
 //4
-// function repeat (str, n) {
+// function repeat (str, n=2) {
 //     for (let i=0; i<n; i++) {
 //         console.log(str);
 //     }
