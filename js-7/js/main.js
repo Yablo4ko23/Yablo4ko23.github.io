@@ -67,7 +67,7 @@
 // }
 // console.log(str);
 
-//6
+//6 сорян, зразу не подумав :)
 // cafe = {
 //     name: 'Republic',
 //     width:200,
@@ -76,9 +76,7 @@
 //     hr: true
 // };
 // let entries = Object.entries(cafe);
-// console.log(entries[0]);
-// console.log(entries[1]);
-// console.log(entries[2]);
-// console.log(entries[3]);
-// console.log(entries[4]);
+// for (let i=0; i<entries.length; i++) {
+//     console.log(entries[i]);
+// }
 // console.log(entries[1][1] * entries[2][1]);
