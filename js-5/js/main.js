@@ -27,13 +27,13 @@
 //     }
 // }
 
-//5
-const message = 'Welcome to Ukraine!';
-let arr = message.split(''),
-    newMessage = arr.join('');
-console.log(arr);
-console.log(arr.indexOf('l'));
-console.log(newMessage);
+//5 ДОРОБИВ!
+//const message = 'Welcome to Ukraine!';
+//let arr = message.split(''),
+//    newMessage = arr.join('');
+//console.log(arr);
+//console.log(arr.indexOf('l'));
+//console.log(newMessage);
 
 //6
 // let stack = [],
