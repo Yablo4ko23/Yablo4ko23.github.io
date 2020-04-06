@@ -28,14 +28,16 @@
 // }
 
 //5
-// const message = 'Welcome to Ukraine!';
-// let arr = message.split('');
-// console.log(arr);
-// console.log(arr.indexOf('l'));
+const message = 'Welcome to Ukraine!';
+let arr = message.split(''),
+    newMessage = arr.join('');
+console.log(arr);
+console.log(arr.indexOf('l'));
+console.log(newMessage);
 
 //6
 // let stack = [],
-//     forward = [2,3,4],
+//     forward = [4,3,2],
 //     back = [5,6,7,8];
 // for (let i=0; i<forward.length; i++) {
 //     stack.unshift(forward[i]);
