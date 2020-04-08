@@ -35,9 +35,11 @@
 // img.src = "./img/second.jpg";
 
 //7
-// let thirdImg = document.querySelector(".beautiful");
+// let thirdImg = document.querySelector(".third-img"),
+//     fourthImg = document.querySelector(".four-img");
 // if (thirdImg.classList.contains('beautiful')) {
-//     thirdImg.src = "./img/four.jpg";
+//     thirdImg.style.display = "none";
+//     fourthImg.style.display = "inline-block";
 // }
 
 //8
