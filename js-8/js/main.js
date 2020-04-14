@@ -5,6 +5,7 @@
 //2
 // let title = document.querySelector(".title-head");
 // title.textContent = 'i love my mom';
+// title.style.color = 'green';
 
 //3
 // let firstP = document.querySelector(".more-text"),
