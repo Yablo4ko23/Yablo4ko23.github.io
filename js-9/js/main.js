@@ -51,8 +51,7 @@
 //7
 // let img = document.querySelector(".shavuha");
 // img.addEventListener('mouseover', function() {
-//     coords =  img.getBoundingClientRect();
-//     alert(coords.top + ' px ' + coords.left + ' px');
+//     alert(img.src);
 // });
 
 //8
