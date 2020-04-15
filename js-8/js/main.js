@@ -36,12 +36,12 @@
 // img.src = "./img/second.jpg";
 
 //7
-// let thirdImg = document.querySelector(".third-img"),
-//     fourthImg = document.querySelector(".four-img");
-// if (thirdImg.classList.contains('beautiful')) {
-//     thirdImg.style.display = "none";
-//     fourthImg.style.display = "inline-block";
-// }
+let thirdImg = document.querySelector(".third-img"),
+    fourthImg = document.querySelector(".four-img");
+if (thirdImg.classList.contains('beautiful')) {
+    thirdImg.style.display = "none";
+    fourthImg.style.display = "inline-block";
+}
 
 //8
 // let checkbox = document.querySelectorAll(".checkbox");
