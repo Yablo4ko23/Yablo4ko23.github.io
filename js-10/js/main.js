@@ -19,14 +19,13 @@
 
 //4
 // let inputs = document.querySelectorAll(".block");
-// inputs.forEach(function(item, i){
+// inputs.forEach((item, i) => {
 //     item.addEventListener("click", function(){
 //         if (item.classList.contains("active")){
 //             item.classList.remove("active");
 //         } else {
 //             item.classList.add("active");
 //         }
-//         i++;
 //         console.log(i);
 //     });
 // });
