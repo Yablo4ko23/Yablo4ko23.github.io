@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel=" stylesheet" href="./style.css">
+    <title>Money App</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">Money App</a>
+    </header>
+    <main>
+        <section class="s1">
+            <h2 class="s1_title">Money App</h2>
+            <p class="s1_desk">Швидкий розрахунок твого бюджета</p>
+        </section>
+
+        <section class="choose-currency">
+            <div class="currency-block">
+                <h3 class="s2_subTitle">Виберіть валюту</h3>
+                <div class="currency-list">
+                    <div class="currency-item" data-action="UAH">UAH</div>
+                    <div class="currency-item" data-action="USD">USD</div>
+                    <div class="currency-item" data-action="EUR">EUR</div>
+                    <div class="currency-item" data-action="RUB">RUB</div>
+                </div>            
+            </div>
+        </section>
+
+        <section class="s2">
+
+            <div class="s2_incomes">
+
+                <div class="s2_incomes-block">
+                    <h3 class="s2_subTitle">Доходи</h3>
+                    <ul class="s2_incomes-list" id="incomes">
+
+                        <li class="s2_incomes-main">
+                            <p>Основний дохід</p>
+                            <input class="incomes-main number" max="340" type="number" placeholder="20,00">
+                            <p class="currency"></p>
+                        </li>
+
+                        <li class="s2_incomes-addit">
+                            <p>Додатковий дохід</p>
+                            <input class="incomes-addit number" max="340" type="number" placeholder="20,00">
+                            <p class="currency"></p>
+                        </li>
+
+                    </ul>                     
+                </div>
+            </div>
+
+            <div class="s2_costs">
+
+                <div class="s2_costs-block">
+                    <h3 class="s2_subTitle">Витрати</h3>
+                    <ul class="s2_costs-list" id="costs">
+
+                        <li class="s2_costs-main">
+                            <div>
+                                <p>Основні витрати</p>
+                                <ul class="mainCosts-list">
+                                </ul>
+                                <button class="s2_costs-btn main">Додати витрати &#10010;</button>                        
+                            </div>
+                        </li>
+
+                        <li class="s2_costs-addit">
+                            <div>
+                                <p>Додаткові витрати</p>
+                                <ul class="additCosts-list">
+                                </ul>
+                                <button class="s2_costs-btn extra">Додати витрати &#10010;</button>                    
+                            </div>
+                        </li>
+
+                    </ul>                
+                </div>
+
+            </div>
+
+            <button class="s2_total-btn">Розрахувати бюджет</button>
+            <ul class="budget_calculation">
+
+                <li class="budget_calculation-item">
+                    <p class="budget-text">Загальний дохід</p>
+                    <div class="calculation-block">
+                        <div class="calculation-number">
+                            <p class="total-incomes budget-text"></p>
+                            <p class="currency"></p>                            
+                        </div>
+                        <button class="detailed-incomes">Докладніше</button>
+                    </div>
+                </li>
+
+                <li class="budget_calculation-item">
+                    <p class="budget-text">Загальні витрати</p>
+                    <div class="calculation-block">
+                        <div class="calculation-number">
+                            <p class="total-costs budget-text"></p>
+                            <p class="currency"></p>                            
+                        </div>
+                        <button class="detailed-costs">Докладніше</button>
+                    </div>
+                </li>
+
+                <li class="budget_calculation-item">
+                    <p class="budget-text">Залишок</p>
+                    <div class="calculation-block">
+                        <div class="calculation-number">
+                            <p class="remains budget-text"></p>
+                            <p class="currency"></p>                           
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+    </main>
+
+    <footer>
+        <span>&copy; 2020 GoIteens</span>
+        <span>yablo4ko23.github.io</span>
+    </footer>
+
+    <div class="form-back">
+        <form class="form_enter-costs">
+            <h4>Введіть свої витрати</h4>
+            <div class="form-main-block">
+                <div class="form-inputs">
+                </div>
+                <button class="add-cost">&#10010;</button>            
+            </div>
+            <button type="submit" class="send-costs">Готово!</button>
+        </form>
+    </div>    
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
