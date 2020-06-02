@@ -8,6 +8,11 @@
     src: url("./fonts//SourceSansPro-Regular.otf");
 }
 
+html {
+    font-size: 10px;
+    min-width: 340px;
+}
+
 *,
 *:before,
 *:after {
@@ -42,38 +47,48 @@ footer {
     margin: 0px;
 }
 
-
+header {
+    display: flex;
+    align-items: flex-end;
+    height: 65px;
+}
 
 .logo {
     font-family: "SourceSansPro-Bold";
     font-size: 48px;
     color: #ffb83d;
-    text-decoration: none;
-    padding-top: 30px;
-    padding-left: 145px;
+    margin-left: 145px;
 }
 
 .s1 {
     background-image: url("./img/photo_2020-05-01_20-20-44.jpg");
     background-repeat: no-repeat;
+    background-position: left;
+    width: 100%;
+    height: 690px;
+    display: flex;
+    align-items: center;
+}
+
+.s1_text-block {
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 145px;
 }
 
 .s1_title {
     font-family: "SourceSansPro-Bold";
     font-size: 72px;
     color: #ffb83d;
-    padding-top: 254px;
-    padding-left: 145px;
-    margin-bottom: 80px;
 }
 
 .s1_desk {
     font-family: "SourceSansPro-Bold";
     font-size: 30px;
     color: #000000;
-    padding-left: 145px;
-    padding-bottom: 203px;
-    margin: 0;
 }
 
 .choose-currency {
@@ -99,7 +114,7 @@ footer {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 600px;
+    width: 450px;
     height: 80px;
 }
 
@@ -141,7 +156,7 @@ footer {
     display: block;
     text-align: center;
     font-family: "SourceSansPro-Bold";
-    font-size: 40px;
+    font-size: 4rem;
     color: #ffb83d;
 }
 
@@ -164,14 +179,6 @@ footer {
     margin: 40px 0px;
 }
 
-.s2_incomes-list {
-    margin-top: 40px;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    height: auto;
-}
-
 .s2_costs {
     width: 100%;
     background-color: #f7f7f7;
@@ -188,11 +195,13 @@ footer {
     height: auto;
 }
 
-.s2_costs-list {
+.s2_costs-list, .s2_incomes-list {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: auto;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .s2_incomes-main,
@@ -203,7 +212,7 @@ footer {
     flex-flow: row;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 44%;
 }
 
 .s2_costs-main div,
@@ -212,6 +221,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .s2_incomes-main p,
@@ -219,7 +229,7 @@ footer {
 .s2_costs-main p,
 .s2_costs-addit p {
     font-family: "SourceSansPro-Bold";
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
@@ -244,7 +254,7 @@ input::-webkit-outer-spin-button {
 
 .s2_costs-btn {
     display: block;
-    width: 346px;
+    width: 59%;
     height: 74px;
     background-color: #00bcb0;
     color: white;
@@ -260,12 +270,22 @@ input::-webkit-outer-spin-button {
 .inner-li {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.budget-block {
+    width: 100%;
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .s2_total-btn {
     display: block;
-    margin: 100px auto;
-    width: 560px;
+    width: 40%;
     height: 80px;
     color: white;
     background-color: #ffb83d;
@@ -273,7 +293,7 @@ input::-webkit-outer-spin-button {
     border-radius: 20px;
     box-shadow: 0px 0px 26px -1px rgba(0, 0, 0, 0.91);
     font-family: "SourceSansPro-Bold";
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
 
@@ -284,19 +304,20 @@ input::-webkit-outer-spin-button {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 180px;
+    margin: 60px 0px 20px 0px;
+    width: 40%;
 }
 
 .budget_calculation-item {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    width: 560px;
+    width: 100%;
     margin: 5px 0px;
 }
 
 .calculation-block {
-    width: 160px;
+    width: 29.7%;
 }
 
 .calculation-number {
@@ -308,7 +329,7 @@ input::-webkit-outer-spin-button {
 
 .budget-text {
     font-family: "SourceSansPro-Bold";
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
     width: auto;
 }
@@ -320,12 +341,12 @@ input::-webkit-outer-spin-button {
 
 .calculation-block button {
     display: block;
-    width: 160px;
+    width: 100%;
     height: 26px;
     background-color: #00bcb0;
     color: white;
     font-family: "SourceSansPro-Bold";
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     border: none;
     border-radius: 20px;
@@ -335,14 +356,14 @@ input::-webkit-outer-spin-button {
 .mainCosts-list,
 .additCosts-list {
     font-family: "SourceSansPro-Regular";
-    font-size: 26px;
+    font-size: 2.6rem;
     margin: 50px 0;
 }
 
 .mainCosts-list span,
 .additCosts-list span {
     margin-right: 10px;
-    position: relative;
+    height: auto;
 }
 
 .close-img{
@@ -476,12 +497,269 @@ input::-webkit-outer-spin-button {
 footer {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 90px;
     color: #f7f7f7;
     font-family: "SourceSansPro-Regular";
-    font-size: 30px;
-    padding: 0 145px;
+    font-size: 3rem;
     background-color: #00bcb0;
+}
+
+.footer-info {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .logo {
+        font-size: 4rem;
+    }
+
+    .s1_title {
+        font-size: 6rem;
+    }
+    .s2_incomes {
+        height: 220px;
+    }
+
+    .incomes-main, .incomes-addit {
+        width: 75px;
+        height: 30px;
+        margin-left: 20px;
+        font-size: 1.7rem;
+    }
+
+    .s2_incomes-main p,
+    .s2_incomes-addit p,
+    .s2_costs-main p,
+    .s2_costs-addit p {
+        font-size: 2rem;
+    }
+
+    .s2_subTitle {
+        font-size: 3.5rem;
+    }
+    
+    .inner-li span {
+        font-size: 2.2rem;
+    }
+
+    .s2_costs-btn {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo, .s1_text-block {
+        margin-left: 80px;
+    }
+
+    .s1_text-block {
+        height: 150px;
+    }
+
+    .s1_title {
+        font-size: 4.5rem;
+    }
+
+    .s1_desk {
+        font-size: 2rem;
+    }
+
+    .s1 {
+        background-image: url(./img/Phon.png);
+        background-repeat: repeat-y;
+        background-position: left;
+        height: 500px;
+    }
+
+    .currency-block {
+        height: 130px;
+    }
+
+    .currency-list {
+        width: 350px;
+    }
+
+    .currency-item {
+        font-size: 2rem;
+        width: 80px;
+        height: 35px;
+    }
+
+    .currency-item:hover {
+        height: 60px;
+    }
+
+    .currency {
+        font-size: 2rem;
+    }
+
+    .s2_incomes-main p,
+    .s2_incomes-addit p,
+    .s2_costs-main p,
+    .s2_costs-addit p {
+        font-size: 1.7rem;
+    }
+    
+    .incomes-addit, .incomes-main {
+        font-size: 1.5rem;
+        width: 60px;
+        margin-left: 10px;
+    }
+
+    .s2_costs-btn {
+        width: 70%;
+        height: 55px;
+        font-size: 1.7rem;
+    }
+
+    .s2_total-btn {
+        width: 55%;
+        font-size: 2.5rem;
+    }
+
+    .budget_calculation {
+        width: 55%;
+    }
+
+    .budget-text {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 2.1rem;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .logo {
+        margin-left: 40px;
+        font-size: 3.5rem;
+    }
+
+    .s1 {
+        height: 400px;
+        background-position: top;
+        justify-content: center;
+    }
+
+    .s1_text-block {
+        height: 100px;
+        margin-left: 0px;
+        align-items: center;
+    }
+
+    .s1_title {
+        font-size: 4rem;
+    }
+
+    .s1_desk {
+        font-size: 1.7rem;
+    }
+
+    .choose-currency, .s2_incomes, .s2_costs {
+        border-radius: 40px;
+    }
+
+    .s2_subTitle {
+        font-size: 3rem;
+    }
+
+    .currency-list {
+        width: 300px;
+    }
+
+    .currency-item {
+        width: 70px;
+        font-size: 1.7rem;
+    }
+
+    .s2_incomes-list {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    .s2_incomes-main, .s2_incomes-addit {
+        align-items: flex-end;
+        width: 70%;
+    }
+
+    .s2_costs-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .s2_costs-main, .s2_costs-addit {
+        margin: 15px 0px;
+    }
+    
+    .mainCosts-list,
+    .additCosts-list {
+        margin: 30px 0px;
+    }
+
+    .s2_costs-btn {
+        width: 90%;
+    }
+
+    .inner-li span {
+        font-size: 1.9rem;
+    }
+
+    .s2_total-btn {
+        width: 80%;
+        font-size: 2rem;
+        height: 60px;
+    }
+
+    .budget_calculation {
+        width: 80%;
+    }
+
+    .budget-block {
+        margin: 60px 0px;
+    }
+
+    .budget-text {
+        font-size: 1.7rem;
+    }
+
+    .budget_calculation-item button {
+        font-size: 1.2rem;
+        height: 20px;
+    }
+
+    footer {
+        font-size: 1.7rem;
+        height: 60px;
+    }
+
+    .footer-info {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .s1 {
+        background-position: bottom;
+        background-position-x: -70px;
+    }
+
+    .s2_incomes-main, .s2_incomes-addit {
+        width: 80%;
+    }
+
+    .s2_costs-btn {
+        width: 100%;
+    }
 }

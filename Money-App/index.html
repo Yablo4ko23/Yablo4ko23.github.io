@@ -10,14 +10,12 @@
 </head>
 
 <body>
-
-    <header>
-        <h1 class="logo">Money App</a>
-    </header>
     <main>
         <section class="s1">
-            <h2 class="s1_title">Money App</h2>
-            <p class="s1_desk">Швидкий розрахунок твого бюджета</p>
+            <div class="s1_text-block">
+                <h2 class="s1_title">Money App</h2>
+                <p class="s1_desk">Швидкий розрахунок твого бюджета</p>                
+            </div>
         </section>
 
         <section class="choose-currency">
@@ -27,7 +25,6 @@
                     <div class="currency-item" data-action="UAH">UAH</div>
                     <div class="currency-item" data-action="USD">USD</div>
                     <div class="currency-item" data-action="EUR">EUR</div>
-                    <div class="currency-item" data-action="RUB">RUB</div>
                 </div>            
             </div>
         </section>
@@ -85,49 +82,53 @@
 
             </div>
 
-            <button class="s2_total-btn">Розрахувати бюджет</button>
-            <ul class="budget_calculation">
-
-                <li class="budget_calculation-item">
-                    <p class="budget-text">Загальний дохід</p>
-                    <div class="calculation-block">
-                        <div class="calculation-number">
-                            <p class="total-incomes budget-text"></p>
-                            <p class="currency"></p>                            
+            <div class="budget-block">
+                <button class="s2_total-btn">Розрахувати бюджет</button>
+                <ul class="budget_calculation">
+    
+                    <li class="budget_calculation-item">
+                        <p class="budget-text">Загальний дохід</p>
+                        <div class="calculation-block">
+                            <div class="calculation-number">
+                                <p class="total-incomes budget-text"></p>
+                                <p class="currency"></p>                            
+                            </div>
+                            <button class="detailed-incomes">Докладніше</button>
                         </div>
-                        <button class="detailed-incomes">Докладніше</button>
-                    </div>
-                </li>
-
-                <li class="budget_calculation-item">
-                    <p class="budget-text">Загальні витрати</p>
-                    <div class="calculation-block">
-                        <div class="calculation-number">
-                            <p class="total-costs budget-text"></p>
-                            <p class="currency"></p>                            
+                    </li>
+    
+                    <li class="budget_calculation-item">
+                        <p class="budget-text">Загальні витрати</p>
+                        <div class="calculation-block">
+                            <div class="calculation-number">
+                                <p class="total-costs budget-text"></p>
+                                <p class="currency"></p>                            
+                            </div>
+                            <button class="detailed-costs">Докладніше</button>
                         </div>
-                        <button class="detailed-costs">Докладніше</button>
-                    </div>
-                </li>
-
-                <li class="budget_calculation-item">
-                    <p class="budget-text">Залишок</p>
-                    <div class="calculation-block">
-                        <div class="calculation-number">
-                            <p class="remains budget-text"></p>
-                            <p class="currency"></p>                           
+                    </li>
+    
+                    <li class="budget_calculation-item">
+                        <p class="budget-text">Залишок</p>
+                        <div class="calculation-block">
+                            <div class="calculation-number">
+                                <p class="remains budget-text"></p>
+                                <p class="currency"></p>                           
+                            </div>
                         </div>
-                    </div>
-                </li>
-
-            </ul>
-
+                    </li>
+    
+                </ul>               
+            </div>
+            
         </section>
     </main>
 
     <footer>
-        <span>&copy; 2020 GoIteens</span>
-        <span>yablo4ko23.github.io</span>
+        <div class="footer-info">
+            <span>&copy; 2020 GoIteens</span>
+            <span>yablo4ko23.github.io</span>            
+        </div>
     </footer>
 
     <div class="form-back">
