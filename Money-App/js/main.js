@@ -83,18 +83,19 @@ function maxValue() {
 addOneMoreCost.addEventListener("click", function (event) {
     countOfNewInputs++;
     formInputs.insertAdjacentHTML("beforeend", '<div class="cost-block"><input required maxlength="20" class="enter_costname" type="text" placeholder="Витрата"/><input required class="enter_costsum" type="number" placeholder="Сума" /><span><img class="close-img" src="./img/close.png"></img></span></div>');
-    formInputs.addEventListener("click", function (event) {
-        let target = event.target;
-        if (target.classList.contains("close-img")) {
-            let parent = target.parentNode;
-            parent.parentNode.remove();
-            countOfNewInputs--;
-        } else {
-            return;
-        }
-    });
     maxValue();
+});
 
+//видалення інпутів у формі
+formInputs.addEventListener("click", function (event) {
+    let target = event.target;
+    if (target.classList.contains("close-img")) {
+        let parent = target.parentNode;
+        parent.parentNode.remove();
+        countOfNewInputs--;
+    } else {
+        return;
+    }
 });
 
 //запис витрат у блоки
