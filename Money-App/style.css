@@ -259,12 +259,27 @@ input::-webkit-outer-spin-button {
     background-color: #00bcb0;
     color: white;
     font-family: "SourceSansPro-Bold";
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: bold;
     border: none;
     border-radius: 10px;
     box-shadow: 0px 0px 26px -1px rgba(0, 0, 0, 0.91);
     cursor: pointer;
+}
+
+.btn_save-changes {
+    width: 350px;
+    height: 75px;
+    color: #ffffff;
+    background-color: #00a51c;
+    font-family: "SourceSansPro-Bold";
+    font-size: 3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 26px -1px rgba(0, 0, 0, 0.91);
+    cursor: pointer;
+    margin-top: 50px;
 }
 
 .inner-li {
@@ -582,6 +597,11 @@ footer {
         font-size: 2.2rem;
     }
 
+    .btn_save-changes {
+        width: 270px;
+        font-size: 2.2rem;
+    }
+
     .form_enter-costs h4 {
         font-size: 2.7rem;
     }
@@ -662,6 +682,11 @@ footer {
         font-size: 1.7rem;
     }
 
+    .btn_save-changes {
+        height: 55px;
+        width: 230px;
+    }
+
     .s2_total-btn {
         width: 55%;
         font-size: 2.5rem;
@@ -713,6 +738,11 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+    .btn_save-changes {
+        width: 180px;
+        font-size: 1.9rem;
+    }
+
     .add-cost {
         width: 30px;
         height: 30px;
@@ -884,6 +914,11 @@ footer {
 
     .s2_costs-btn {
         width: 100%;
+    }
+
+    .btn_save-changes {
+        width: 150px;
+
     }
 
     .form_enter-costs {

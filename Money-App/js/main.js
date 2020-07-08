@@ -35,15 +35,20 @@ let newEnterCostName = document.createElement("input"),
 
 //елементу вибору валюти
 let currencyItems = document.querySelectorAll(".currency-item"),
-    currency = document.querySelectorAll(".currency");
+    currency = document.querySelectorAll(".currency"),
+    action;
+
+function setCurrency () {
+    for (let i = 0; i < currency.length; i++) {
+        currency[i].innerText = action;
+    }
+}
 
 //запис валюти
 currencyItems.forEach(function (item) {
     item.addEventListener("click", function () {
-        let action = event.target.dataset.action;
-        for (let i = 0; i < currency.length; i++) {
-            currency[i].innerText = action;
-        }
+        action = event.target.dataset.action;
+        setCurrency();
     });
 });
 
@@ -181,4 +186,25 @@ detailedIncomes.addEventListener("click", function () {
         behavior: "smooth",
         block: "center"
     });
+});
+
+let saveBtn = document.querySelector(".btn_save-changes"),
+    mainCosts = document.querySelector(".mainCosts-list"),
+    additCosts = document.querySelector(".additCosts-list");
+
+saveBtn.addEventListener("click", function(){
+    localStorage.setItem("mainCosts", mainCosts.innerHTML);
+    localStorage.setItem("additCosts", additCosts.innerHTML);
+    localStorage.setItem("currency", action);
+    localStorage.setItem("mainIncomes", enterIncomes[0].value);
+    localStorage.setItem("extraIncomes", enterIncomes[1].value);
+});
+
+document.addEventListener("DOMContentLoaded", function(){
+    mainCosts.innerHTML = localStorage.getItem("mainCosts");
+    additCosts.innerHTML = localStorage.getItem("additCosts");
+    enterIncomes[0].value = localStorage.getItem("mainIncomes");
+    enterIncomes[1].value = localStorage.getItem("extraIncomes");
+    action = localStorage.getItem("currency");
+    setCurrency();
 });
